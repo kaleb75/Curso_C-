@@ -1,0 +1,51 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    color: #2564a3;
+  }
+  
+  pre {
+    background-color: #ceddec;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+  }
+  
+  pre {
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  #caja-registradora h2 {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  #caja-registradora pre {
+    background-color: #b8b8b8;
+    border: 1px solid #848dff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  
+  #caja-registradora ul {
+    list-style-type: square;
+  }
+  

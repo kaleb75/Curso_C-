@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Completo de C++</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Curso de C++</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#introduccion">Introducción</a></li>
+          <li class="nav-item"><a class="nav-link" href="#estructura">Estructura</a></li>
+          <li class="nav-item"><a class="nav-link" href="#variables">Variables</a></li>
+          <li class="nav-item"><a class="nav-link" href="#operadores">Operadores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#estructuras">Estructuras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#funciones">Funciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#poo">POO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#archivos">Archivos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#caja-registradora">Caja Registradora</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container mt-4">
+    <!-- Introducción -->
+    <section id="introduccion">
+      <h1>Bienvenido al Curso de C++ Basico</h1>
+      <p>C++ es un lenguaje de programación poderoso y versátil. Este curso está diseñado para principiantes que quieren aprender a programar desde cero.</p>
+      <ul>
+        <li><strong>¿Qué aprenderás?</strong>
+          <ul>
+            <li>La sintaxis básica de C++.</li>
+            <li>Estructuras de control y funciones.</li>
+            <li>Introducción a la programación orientada a objetos (POO).</li>
+            <li>Manejo de archivos.</li>
+          </ul>
+        </li>
+        <li><strong>Requisitos:</strong>
+          <ul>
+            <li>Conocimientos básicos de informática.</li>
+            <li>Un computador con un compilador de C++ instalado (por ejemplo, Code::Blocks o Visual Studio Code).</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Estructura básica -->
+    <section id="estructura" class="mt-5">
+      <h2>Módulo 1: Estructura de un Programa en C++</h2>
+      <p>Un programa en C++ básico tiene la siguiente estructura:</p>
+      <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    // Tu código aquí
+    return 0;
+}
+      </pre>
+      <p><strong>Explicación:</strong></p>
+      <ul>
+        <li><code>#include &lt;iostream&gt;</code>: Librería estándar para entrada y salida.</li>
+        <li><code>using namespace std;</code>: Usa el espacio de nombres estándar.</li>
+        <li><code>int main()</code>: Punto de inicio del programa.</li>
+      </ul>
+    </section>
+
+    <!-- Variables y Tipos de Datos -->
+    <section id="variables" class="mt-5">
+      <h2>Módulo 2: Variables y Tipos de Datos</h2>
+      <p>En C++, las variables se utilizan para almacenar datos. Algunos tipos comunes son:</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>int</code></td>
+            <td>Números enteros.</td>
+            <td><code>int edad = 20;</code></td>
+          </tr>
+          <tr>
+            <td><code>float</code></td>
+            <td>Números decimales.</td>
+            <td><code>float altura = 1.75;</code></td>
+          </tr>
+          <tr>
+            <td><code>string</code></td>
+            <td>Cadenas de texto.</td>
+            <td><code>string nombre = "Juan";</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Operadores -->
+    <section id="operadores" class="mt-5">
+      <h2>Módulo 3: Operadores</h2>
+      <p>Los operadores se utilizan para realizar operaciones matemáticas o lógicas:</p>
+      <ul>
+        <li><strong>Aritméticos:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code></li>
+        <li><strong>Relacionales:</strong> <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code></li>
+        <li><strong>Lógicos:</strong> <code>&&</code>, <code>||</code>, <code>!</code></li>
+      </ul>
+      <p>Ejemplo:</p>
+      <pre>
+int a = 10, b = 5;
+cout &lt;&lt; (a + b); // Muestra 15
+cout &lt;&lt; (a &gt; b); // Muestra 1 (true)
+      </pre>
+    </section>
+
+    <!-- Estructuras de Control -->
+    <section id="estructuras" class="mt-5">
+      <h2>Módulo 4: Estructuras de Control</h2>
+      <p>En C++, las estructuras de control permiten tomar decisiones y repetir acciones:</p>
+      <ul>
+        <li><code>if</code>: Para tomar decisiones.</li>
+        <li><code>for</code>: Para bucles con un número fijo de iteraciones.</li>
+        <li><code>while</code>: Para bucles que se ejecutan mientras una condición sea verdadera.</li>
+      </ul>
+      <p>Ejemplo:</p>
+      <pre>
+for (int i = 0; i &lt; 5; i++) {
+    cout &lt;&lt; i &lt;&lt; endl;
+}
+      </pre>
+    </section>
+
+    <section id="funciones" class="mt-5">
+        <h2>Módulo 5: Funciones</h2>
+        <p>Las funciones son bloques de código que realizan una tarea específica y pueden ser reutilizados. La estructura básica de una función es:</p>
+        <pre>
+      #include &lt;iostream&gt;
+      using namespace std;
+      
+      // Declaración de la función
+      int suma(int a, int b) {
+          return a + b;
+      }
+      
+      int main() {
+          int resultado = suma(10, 20);
+          cout &lt;&lt; "La suma es: " &lt;&lt; resultado &lt;&lt; endl;
+          return 0;
+      }
+        </pre>
+        <p><strong>Explicación:</strong></p>
+        <ul>
+          <li><code>int suma(int a, int b)</code>: Declara una función que toma dos parámetros de tipo entero y devuelve un entero.</li>
+          <li><code>return</code>: Devuelve el resultado de la operación <code>a + b</code>.</li>
+          <li><code>int resultado = suma(10, 20)</code>: Llama a la función y almacena el resultado en una variable.</li>
+        </ul>
+        <p>Ventajas de usar funciones:</p>
+        <ul>
+          <li>Reutilización de código.</li>
+          <li>Mejor organización y legibilidad.</li>
+          <li>Fácil mantenimiento y depuración.</li>
+        </ul>
+      </section>
+
+      <section id="poo" class="mt-5">
+        <h2>Módulo 6: Programación Orientada a Objetos (POO)</h2>
+        <p>La POO es un paradigma de programación que organiza el código en **clases** y **objetos**. Una clase es como un molde, y un objeto es una instancia de esa clase.</p>
+        <p>Ejemplo básico:</p>
+        <pre>
+      #include &lt;iostream&gt;
+      using namespace std;
+      
+      // Definición de la clase
+      class Persona {
+      public:
+          string nombre;
+          int edad;
+      
+          // Método de la clase
+          void saludar() {
+              cout &lt;&lt; "Hola, mi nombre es " &lt;&lt; nombre &lt;&lt; " y tengo " &lt;&lt; edad &lt;&lt; " años." &lt;&lt; endl;
+          }
+      };
+      
+      int main() {
+          // Crear un objeto de la clase Persona
+          Persona persona1;
+          persona1.nombre = "Juan";
+          persona1.edad = 30;
+      
+          // Llamar al método
+          persona1.saludar();
+      
+          return 0;
+      }
+        </pre>
+        <p><strong>Explicación:</strong></p>
+        <ul>
+          <li><code>class Persona</code>: Declara una clase llamada <code>Persona</code>.</li>
+          <li><code>public:</code> Especifica que los miembros de la clase son accesibles desde fuera de la clase.</li>
+          <li><code>persona1.nombre</code>: Accede al atributo <code>nombre</code> del objeto <code>persona1</code>.</li>
+          <li><code>persona1.saludar()</code>: Llama al método <code>saludar</code>.</li>
+        </ul>
+        <p>Ventajas de la POO:</p>
+        <ul>
+          <li>Organización del código en módulos (clases).</li>
+          <li>Reutilización mediante la herencia.</li>
+          <li>Facilidad para modelar problemas del mundo real.</li>
+        </ul>
+      </section>
+      
+      <section id="archivos" class="mt-5">
+        <h2>Módulo 7: Manejo de Archivos</h2>
+        <p>En C++, puedes trabajar con archivos para almacenar y recuperar datos. Usa las librerías <code>fstream</code>, <code>ifstream</code> (lectura) y <code>ofstream</code> (escritura).</p>
+        <p>Ejemplo básico de escritura y lectura:</p>
+        <pre>
+      #include &lt;iostream&gt;
+      #include &lt;fstream&gt;
+      using namespace std;
+      
+      int main() {
+          // Escritura en un archivo
+          ofstream archivo("datos.txt");
+          archivo &lt;&lt; "Hola, este es un archivo de ejemplo." &lt;&lt; endl;
+          archivo.close();
+      
+          // Lectura desde un archivo
+          ifstream archivoLectura("datos.txt");
+          string linea;
+          while (getline(archivoLectura, linea)) {
+              cout &lt;&lt; linea &lt;&lt; endl;
+          }
+          archivoLectura.close();
+      
+          return 0;
+      }
+        </pre>
+        <p><strong>Explicación:</strong></p>
+        <ul>
+          <li><code>ofstream archivo("datos.txt")</code>: Abre el archivo para escritura.</li>
+          <li><code>archivo.close()</code>: Cierra el archivo después de escribir.</li>
+          <li><code>ifstream archivoLectura("datos.txt")</code>: Abre el archivo para lectura.</li>
+          <li><code>getline(archivoLectura, linea)</code>: Lee cada línea del archivo y la almacena en la variable <code>linea</code>.</li>
+        </ul>
+        <p>Consejos para trabajar con archivos:</p>
+        <ul>
+          <li>Siempre cierra los archivos después de usarlos.</li>
+          <li>Verifica que el archivo se abrió correctamente antes de operar.</li>
+          <li>Utiliza rutas relativas para evitar problemas de localización.</li>
+        </ul>
+      </section>
+      
+      <section id="caja-registradora" class="mt-5">
+        <h2>Proyecto: Caja Registradora</h2>
+        <p>Este proyecto simula una caja registradora básica en C++. Sus funcionalidades incluyen:</p>
+        <ul>
+          <li>Saludar y despedirse del cliente.</li>
+          <li>Agregar productos al pedido.</li>
+          <li>Calcular el total de la cuenta.</li>
+          <li>Cobrar al cliente y devolver cambio.</li>
+        </ul>
+        <p><strong>Ejemplo de código:</strong></p>
+        <pre>
+      #include &lt;iostream&gt;
+      #include &lt;vector&gt;
+      #include &lt;iomanip&gt; // Para manejar formato decimal
+      using namespace std;
+      
+      // Clase Producto
+      class Producto {
+      public:
+          string nombre;
+          double precio;
+      
+          Producto(string n, double p) : nombre(n), precio(p) {}
+      };
+      
+      // Clase CajaRegistradora
+      class CajaRegistradora {
+      private:
+          vector&lt;Producto&gt; productos;
+          double total;
+      
+      public:
+          CajaRegistradora() : total(0.0) {}
+      
+          void saludar() {
+              cout &lt;&lt; "=======================================" &lt;&lt; endl;
+              cout &lt;&lt; "  Bienvenido a la Tienda La Esquinita!" &lt;&lt; endl;
+              cout &lt;&lt; "=======================================" &lt;&lt; endl;
+          }
+      
+          void agregarProducto(string nombre, double precio) {
+              productos.push_back(Producto(nombre, precio));
+              total += precio;
+              cout &lt;&lt; "Producto agregado: " &lt;&lt; nombre &lt;&lt; " ($" &lt;&lt; precio &lt;&lt; ")" &lt;&lt; endl;
+          }
+      
+          void mostrarTotal() {
+              cout &lt;&lt; "=======================================" &lt;&lt; endl;
+              cout &lt;&lt; "Total a pagar: $" &lt;&lt; fixed &lt;&lt; setprecision(2) &lt;&lt; total &lt;&lt; endl;
+              cout &lt;&lt; "=======================================" &lt;&lt; endl;
+          }
+      
+          void cobrar(double efectivo) {
+              if (efectivo &gt;= total) {
+                  double cambio = efectivo - total;
+                  cout &lt;&lt; "Pago recibido: $" &lt;&lt; efectivo &lt;&lt; endl;
+                  cout &lt;&lt; "Cambio: $" &lt;&lt; fixed &lt;&lt; setprecision(2) &lt;&lt; cambio &lt;&lt; endl;
+              } else {
+                  cout &lt;&lt; "Efectivo insuficiente. Faltan $" &lt;&lt; fixed &lt;&lt; setprecision(2) &lt;&lt; (total - efectivo) &lt;&lt; endl;
+              }
+          }
+      
+          void despedir() {
+              cout &lt;&lt; "=======================================" &lt;&lt; endl;
+              cout &lt;&lt; "  Gracias por su compra. ¡Vuelva pronto!" &lt;&lt; endl;
+              cout &lt;&lt; "=======================================" &lt;&lt; endl;
+          }
+      };
+      
+      int main() {
+          CajaRegistradora caja;
+          caja.saludar();
+      
+          caja.agregarProducto("Manzana", 10.5);
+          caja.agregarProducto("Pan", 15.0);
+          caja.agregarProducto("Leche", 20.0);
+      
+          caja.mostrarTotal();
+      
+          double efectivo;
+          cout &lt;&lt; "Ingrese el efectivo entregado: ";
+          cin &gt;&gt; efectivo;
+      
+          caja.cobrar(efectivo);
+          caja.despedir();
+      
+          return 0;
+      }
+        </pre>
+        <p><strong>Explicación:</strong></p>
+        <ul>
+          <li><code>Producto</code>: Clase para representar un producto con nombre y precio.</li>
+          <li><code>CajaRegistradora</code>: Clase principal que contiene funcionalidades como saludar, agregar productos, mostrar el total, cobrar y despedirse.</li>
+          <li><code>vector</code>: Contenedor dinámico para almacenar productos.</li>
+          <li><code>setprecision</code>: Función de la librería <code>iomanip</code> para manejar el formato decimal.</li>
+        </ul>
+        <p>Este proyecto muestra los conceptos clave de POO, como encapsulación, objetos y métodos. ¡Inténtalo!</p>
+      </section>
+      
+    <!-- Más módulos (Funciones, POO, Archivos) -->
+    <!-- Añade los módulos de funciones, POO y manejo de archivos siguiendo el mismo formato -->
+  </div>
+  
+  <div>
+    <section id="editor">
+        <h2>Editor de C++</h2>
+        <div id="editor-container" style="height: 400px; width: 100%;"></div>
+        <button id="run-code">Ejecutar (Simulación)</button>
+        <div id="output"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.js"></script>
+        <script>
+          const editor = ace.edit("editor-container");
+          editor.setTheme("ace/theme/monokai");
+          editor.session.setMode("ace/mode/c_cpp");
+      
+          document.getElementById("run-code").onclick = () => {
+            const code = editor.getValue();
+            document.getElementById("output").innerText = `Código simulado:\n\n${code}`;
+          };
+        </script>
+      </section>
+      
+      
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2024 Curso Basico de C++ | Desarrollado por Kaleb Chavira</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
